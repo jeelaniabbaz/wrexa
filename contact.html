@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wrexa Technologies | Get in Touch for AR/VR Solutions</title>
+    <meta name="description" content="Contact Wrexa Technologies for AR/VR development, metaverse solutions, and enterprise software. Offices in USA and India.">
+    <meta name="keywords" content="contact Wrexa, AR VR consultation, metaverse development inquiry, Unreal Engine services, enterprise software contact">
+    <meta name="author" content="Wrexa Technologies">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.wrexa.com/contact">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Wrexa Technologies | AR/VR & Metaverse Solutions">
+    <meta property="og:description" content="Get in touch with our team for cutting-edge immersive technology solutions.">
+    <meta property="og:url" content="https://www.wrexa.com/contact">
+    <meta property="og:site_name" content="Wrexa Technologies">
+    
+    <!-- JSON-LD ContactPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Wrexa Technologies",
+        "description": "Get in touch with Wrexa Technologies for AR/VR, Metaverse, and enterprise solutions",
+        "url": "https://www.wrexa.com/contact"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+                :root {
+            --bg-primary: #0a0b10;
+            --bg-secondary: #0f1015;
+            --bg-header: rgba(10, 11, 16, 0.8);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow-x: hidden;
+            color: var(--text-primary);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.05); } }
+
+        /* Header */
+        .header {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 0.75rem 3rem;
+            background: var(--bg-header);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .header-container { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.5));
+        }
+
+        @keyframes logoGlow {
+            0%, 100% { filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.5)) drop-shadow(0 0 25px rgba(59, 130, 246, 0.3)); }
+            50% { filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.7)) drop-shadow(0 0 40px rgba(59, 130, 246, 0.5)); }
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.8)) drop-shadow(0 0 50px rgba(59, 130, 246, 0.5));
+        }
+
+        .header:hover .logo-img {
+            filter: drop-shadow(0 0 18px rgba(59, 130, 246, 0.6)) drop-shadow(0 0 35px rgba(59, 130, 246, 0.4));
+        }
+
+        .logo:hover .logo-img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+        }
+
+        .header:hover .logo-img {
+            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+        }
+
+        .logo-icon { width: 28px; height: 28px; }
+        .logo-text { font-size: 1.25rem; font-weight: 600; color: #fff; }
+        .nav { display: flex; align-items: center; gap: 2rem; }
+        .nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: var(--text-primary); }
+        .nav-dropdown { position: relative; }
+        .nav-link.has-dropdown { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+        .dropdown-arrow { width: 14px; height: 14px; transition: transform 0.3s; }
+        .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+        .dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px); min-width: 280px; background: rgba(15, 17, 25, 0.98); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; padding: 0.5rem; opacity: 0; visibility: hidden; transition: all 0.3s; z-index: 1000; }
+        .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(5px); }
+        .dropdown-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; border-radius: 8px; transition: all 0.2s; }
+        .dropdown-item:hover { color: #fff; background: rgba(59, 130, 246, 0.1); }
+        .dropdown-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: rgba(59, 130, 246, 0.1); border-radius: 8px; color: #3b82f6; }
+        .dropdown-icon svg { width: 16px; height: 16px; }
+        .header-right { display: flex; align-items: center; gap: 1rem; }
+        .btn-demo { padding: 0.6rem 1.25rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(6, 182, 212, 0.1)); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 8px; color: #fff; font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: all 0.3s; }
+        .btn-demo:hover { background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(6, 182, 212, 0.2)); transform: translateY(-2px); }
+        .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 5px; }
+        .mobile-menu-btn span { width: 24px; height: 2px; background: #fff; border-radius: 2px; transition: all 0.3s; }
+        .mobile-nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10, 11, 16, 0.98); z-index: 999; padding: 100px 2rem; opacity: 0; visibility: hidden; transition: all 0.3s; }
+        .mobile-nav.active { opacity: 1; visibility: visible; }
+        .mobile-nav-links { display: flex; flex-direction: column; gap: 0.5rem; }
+        .mobile-nav-link { color: var(--text-secondary); text-decoration: none; font-size: 1.5rem; font-weight: 500; padding: 1rem 0; border-bottom: 1px solid rgba(59, 130, 246, 0.1); }
+        .mobile-nav-link:hover, .mobile-nav-link.active { color: #3b82f6; }
+
+        /* Hero */
+        .page-hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .hero-container { position: relative; z-index: 1; max-width: 800px; }
+        .page-badge { display: inline-flex; align-items: center; gap: 8px; padding: 0.5rem 1.25rem; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 50px; font-size: 0.85rem; color: #3b82f6; margin-bottom: 1.5rem; animation: fadeInUp 0.6s ease-out; }
+        .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; animation: fadeInUp 0.6s ease-out 0.1s backwards; }
+        .page-hero h1 .highlight { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .page-hero p { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; animation: fadeInUp 0.6s ease-out 0.2s backwards; }
+
+        /* Contact Section */
+        .contact-section { padding: 4rem 2rem 6rem; }
+        .contact-container { max-width: 1200px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
+        .contact-info h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
+        .contact-info > p { color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7; }
+        .contact-methods { display: flex; flex-direction: column; gap: 1.5rem; }
+        .contact-method { display: flex; gap: 1rem; align-items: flex-start; }
+        .method-icon { width: 48px; height: 48px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .method-icon svg { width: 22px; height: 22px; color: #3b82f6; }
+        .method-details h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .method-details p { color: var(--text-secondary); font-size: 0.9rem; }
+        .contact-form-wrapper { background: rgba(59, 130, 246, 0.03); border: 1px solid rgba(59, 130, 246, 0.15); border-radius: 20px; padding: 2.5rem; }
+        .contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .form-group label { font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 0.875rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 10px;
+            color: #fff;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+        }
+        .form-group textarea { resize: vertical; min-height: 50px; }
+        .form-group select { cursor: pointer; }
+        .form-group select option { background: #1a1b26; }
+        .btn-submit {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3); }
+
+        /* Map Section */
+        .map-section { padding: 4rem 2rem; background: rgba(59, 130, 246, 0.02); }
+        .map-container { max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-badge { display: inline-flex; align-items: center; gap: 8px; padding: 0.5rem 1rem; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 50px; font-size: 0.8rem; color: #3b82f6; margin-bottom: 1rem; }
+        .badge-dot { width: 6px; height: 6px; background: #3b82f6; border-radius: 50%; animation: pulse 2s infinite; }
+        .section-title { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+        .section-title .highlight { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section-description { color: var(--text-secondary); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+        .locations-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .location-card {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .location-card:hover { transform: translateY(-5px); border-color: rgba(59, 130, 246, 0.4); }
+        .location-icon { width: 60px; height: 50px; margin: 0 auto 1.5rem; background: rgba(59, 130, 246, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .location-icon svg { width: 28px; height: 28px; color: #3b82f6; }
+        .location-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+        .location-address { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
+        .location-hours { color: #3b82f6; font-size: 0.85rem; font-weight: 500; }
+
+        /* FAQ Section */
+        .faq-section { padding: 4rem 2rem; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-grid { display: flex; flex-direction: column; gap: 1rem; }
+        .faq-item { background: rgba(59, 130, 246, 0.03); border: 1px solid rgba(59, 130, 246, 0.15); border-radius: 12px; overflow: hidden; }
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: left;
+        }
+        .faq-icon { width: 20px; height: 20px; color: #3b82f6; transition: transform 0.3s; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-item.active .faq-answer { max-height: 200px; }
+        .faq-answer p { padding: 0 1.5rem 1.25rem; color: var(--text-secondary); line-height: 1.7; }
+
+        /* Footer */
+        .footer-section { position: relative; z-index: 10; padding: 80px 5% 30px; background: linear-gradient(180deg, #0a0e18 0%, #080a10 100%); overflow: hidden; }
+        .footer-bg { position: absolute; inset: 0; pointer-events: none; }
+        .footer-gradient { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(100, 116, 139, 0.3), transparent); }
+        .footer-grid-lines { position: absolute; inset: 0; background-image: linear-gradient(rgba(100, 116, 139, 0.03) 1px, transparent 1px); background-size: 100% 60px; mask-image: linear-gradient(180deg, black 0%, transparent 50%); }
+        .footer-container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
+        .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; }
+        .footer-logo { display: flex; align-items: center; margin-bottom: 1.5rem; }
+        .footer-logo-img { height:  100px; width: auto; filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.4)) drop-shadow(0 0 25px rgba(59, 130, 246, 0.2)); transition: all 0.4s ease; }
+        .footer-logo-img:hover { transform: scale(1.08); filter: drop-shadow(0 0 25px rgba(59, 130, 246, 0.7)) drop-shadow(0 0 50px rgba(59, 130, 246, 0.4)); }
+        .company-addresses { margin-bottom: 1.5rem; }
+        .company-addresses p { font-size: 0.85rem; color: rgba(255, 255, 255, 0.5); line-height: 1.8; margin: 0; }
+        .footer-email { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1rem; background: rgba(100, 116, 139, 0.1); border: 1px solid rgba(100, 116, 139, 0.2); border-radius: 8px; color: #64748b; font-size: 0.85rem; text-decoration: none; transition: all 0.3s ease; }
+        .footer-email svg { width: 16px; height: 16px; }
+        .footer-email:hover { background: rgba(100, 116, 139, 0.2); border-color: rgba(100, 116, 139, 0.4); color: #94a3b8; transform: translateY(-2px); }
+        .footer-links-title { font-size: 0.7rem; font-weight: 600; color: rgba(255, 255, 255, 0.35); letter-spacing: 0.15em; margin-bottom: 1.25rem; }
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; text-decoration: none; transition: all 0.3s ease; }
+        .footer-links a:hover { color: rgba(255, 255, 255, 0.9); }
+        .footer-divider { position: relative; height: 1px; margin-bottom: 2rem; }
+        .divider-line { position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(100, 116, 139, 0.2), transparent); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem; }
+        .footer-legal { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .legal-link { display: inline-flex; align-items: center; gap: 4px; color: rgba(255, 255, 255, 0.4); font-size: 0.8rem; text-decoration: none; transition: color 0.3s ease; }
+        .legal-link:hover { color: rgba(255, 255, 255, 0.7); }
+        .footer-copyright { color: rgba(255, 255, 255, 0.3); font-size: 0.8rem; }
+        .footer-badges { display: flex; justify-content: center; gap: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(100, 116, 139, 0.1); }
+        .security-badge { display: flex; align-items: center; gap: 0.5rem; color: rgba(255, 255, 255, 0.35); font-size: 0.75rem; }
+        .security-badge svg { width: 14px; height: 14px; color: rgba(74, 222, 128, 0.6); }
+        .footer-bottom-line { position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: rgba(100, 116, 139, 0.1); overflow: hidden; }
+        .line-progress { height: 100%; width: 30%; background: linear-gradient(90deg, transparent, #64748b, transparent); animation: lineMove 3s linear infinite; }
+        @keyframes lineMove { 0% { transform: translateX(-100%); } 100% { transform: translateX(400%); } }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .header { padding: 0.75rem 1.5rem; }
+            .nav { display: none; }
+            .mobile-nav { display: block; }
+            .mobile-menu-btn { display: flex; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .locations-grid { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .header { padding: 0.75rem 1rem; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr; text-align: center; }
+            .footer-logo { justify-content: center; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal { justify-content: center; }
+            .footer-badges { flex-wrap: wrap; gap: 1rem; }
+        }
+    
+        
+
+
+        .footer-logo-img {
+            height: 100px;
+            width: auto;
+            filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.4));
+            transition: all 0.4s ease;
+        }
+
+        .footer-logo-img:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+            <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="data:image/jpeg;base64,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" alt="Wrexa" class="logo-img">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link has-dropdown">
+                        Services
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-inner">
+                            <a href="metaverse-development.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>Metaverse Development</span>
+                            </a>
+                            <a href="game-development.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="2"/><path d="M15 10v4M13 12h4" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>Game Development</span>
+                            </a>
+                            <a href="mobile-web-development.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                                <span>Web & Mobile Apps</span>
+                            </a>
+                            <a href="ai-solutions.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                                <span>AI Solutions</span>
+                            </a>
+                            <a href="ar-vr.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="12" r="2" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>AR/VR Experiences</span>
+                            </a>
+                            <a href="blockchain.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>Blockchain & Web3</span>
+                            </a>
+                            <a href="devops-sre.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+                                <span>DevOps & SRE</span>
+                            </a>
+                            <a href="it-support.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>IT Support</span>
+                            </a>
+                            <a href="cgi-3d-visualization.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>CGI &amp; 3D Visualization</span>
+                            </a>
+                            <a href="immersive-training.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>Immersive Training</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blogs.html" class="nav-link">Blogs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Right Side -->
+            <div class="header-right">
+                <a href="https://cal.com/wrexa/30min" target="_blank" class="btn-demo">Book a Demo</a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="#" class="mobile-nav-link has-submenu" id="mobileServicesToggle">
+                Services
+                <svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <div class="mobile-services-menu" id="mobileServicesMenu">
+                <a href="metaverse-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/></svg></span>Metaverse Development</a>
+                <a href="game-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/></svg></span>Game Development</a>
+                <a href="game-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>Web & Mobile Apps</a>
+                <a href="ai-solutions.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="2"/></svg></span>AI Solutions</a>
+                <a href="mobile-web-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>AR/VR Experiences</a>
+                <a href="it-support.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></span>Blockchain & NFT</a>
+                <a href="cgi-3d-visualization.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/></svg></span>CGI &amp; 3D Visualization</a>
+                <a href="immersive-training.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2"/></svg></span>Immersive Training</a>
+                <a href="devops-sre.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg></span>DevOps & SRE</a>
+            </div>
+            <a href="about-us.html" class="mobile-nav-link">About Us</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="blogs.html" class="mobile-nav-link">Blogs</a>
+            <a href="contact.html" class="mobile-nav-link active">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-container">
+            <span class="page-badge">Contact Us</span>
+            <h1>Let's <span class="highlight">Connect</span></h1>
+            <p>Have a project in mind? We'd love to hear from you. Reach out and let's create something amazing together.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Fill out the form and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>USA Office</h4>
+                                <p>5830 E 2nd, St Ste 8, Casper, WY 82609</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>India Office</h4>
+                                <p>3/350 Rajiv Gandhi Salai OMR, Chennai</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M22 6l-10 7L2 6" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:contact@wrexa.com">contact@wrexa.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>Call Us</h4>
+                                <p>+91-99529-47755</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="b03b7e19-d625-4403-8cb6-bef110fead5f">
+                        <input type="hidden" name="subject" value="New Contact from Wrexa Website">
+                        <input type="hidden" name="from_name" value="Wrexa Contact Form">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" name="company" placeholder="Your Company">
+                        </div>
+                        <div class="form-group">
+                            <label>Service Interest</label>
+                            <select name="service">
+                                <option value="">Select a service</option>
+                                <option value="Metaverse Development">Metaverse Development</option>
+                                <option value="Game Development">Game Development</option>
+                                <option value="Web & Mobile Apps">Web & Mobile Apps</option>
+                                <option value="AI Solutions">AI Solutions</option>
+                                <option value="AR/VR Development">AR/VR Development</option>
+                                <option value="Blockchain & Web3">Blockchain & Web3</option>
+                                <option value="DevOps & SRE">DevOps & SRE</option>
+                                <option value="IT Support">IT Support</option>
+                                <option value="CGI & 3D Visualization">CGI & 3D Visualization</option>
+                                <option value="Immersive Training">Immersive Training</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <div class="section-header">
+                <span class="section-badge"><span class="badge-dot"></span>Our Locations</span>
+                <h2 class="section-title">Global <span class="highlight">Presence</span></h2>
+                <p class="section-description">With offices in the USA and India, we provide round-the-clock support across time zones.</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 class="location-title">USA Office</h3>
+                    <p class="location-address">5830 E 2nd, St Ste 8<br>Casper, WY 82609</p>
+                    <p class="location-hours">Mon-Fri: 9AM - 6PM MST</p>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 class="location-title">India Office</h3>
+                    <p class="location-address">3/350 Rajiv Gandhi Salai OMR<br>Chennai, India</p>
+                    <p class="location-hours">Mon-Fri: 9AM - 6PM IST</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <span class="section-badge"><span class="badge-dot"></span>FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly can you start a new project?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically begin within 1-2 weeks of contract signing. For urgent projects, we can mobilize resources faster.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What technologies do you specialize in?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We specialize in Unreal Engine, Unity, AR/VR, AI/ML solutions, blockchain, and enterprise web/mobile development.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer ongoing support and maintenance?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer flexible support packages including 24/7 monitoring, updates, bug fixes, and feature enhancements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your typical project timeline?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Timelines vary by complexity. AR filters take 2-4 weeks, while metaverse platforms may require 3-6 months.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+            <!-- Footer Background -->
+            <div class="footer-bg">
+                <div class="footer-gradient"></div>
+                <div class="footer-grid-lines"></div>
+            </div>
+
+            <div class="footer-container">
+                <!-- Main Footer Content -->
+                <div class="footer-main">
+                    <!-- Company Info -->
+                    <div class="footer-company">
+                        <div class="footer-logo">
+                            <img src="data:image/jpeg;base64,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" alt="Wrexa" class="footer-logo-img">
+                        </div>
+                        <div class="company-addresses">
+                            <p>5830 E 2nd, St Ste 8 Casper, WY 82609 USA</p>
+                            <p>3/350 Rajiv Gandhi Salai OMR , India</p>
+                            <p>(+91) 99529 47755</p>
+                        </div>
+                        <a href="mailto:contact@wrexa.com" class="footer-email">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>contact@wrexa.com</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">QUICK LINKS</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blogs.html">Blogs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Connect -->
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">CONNECT</h4>
+                        <ul class="footer-links">
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">SOCIAL</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Art Station</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Divider -->
+                <div class="footer-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-glow"></div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Privacy and Legal</a>
+                        <a href="#" class="legal-link">
+                            Make a Privacy Request
+                            <svg viewBox="0 0 24 24" fill="none" width="12" height="12">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="legal-link">Contact Security</a>
+                        <a href="#" class="legal-link">Cookie Settings</a>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Copyright © 2026 Wrexa Technologies. All rights reserved.</p>
+                    </div>
+                </div>
+
+                <!-- Security Badges -->
+                <div class="footer-badges">
+                    <div class="security-badge">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>SSL Secured</span>
+                    </div>
+                    <div class="security-badge">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>GDPR Compliant</span>
+                    </div>
+                    <div class="security-badge">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Bottom Line -->
+            <div class="footer-bottom-line">
+                <div class="line-progress"></div>
+            </div>
+        </footer>
+
+
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileNav = document.getElementById('mobileNav');
+        
+        if (mobileMenuBtn && mobileNav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+            });
+        }
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/placeholder/default';
+    s1
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

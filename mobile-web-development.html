@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile & Web App Development Services | Wrexa Technologies</title>
+    <meta name="description" content="Custom mobile and web application development services. iOS, Android, React Native, Flutter, React, Next.js, Node.js solutions. Build scalable, high-performance apps with Wrexa Technologies.">
+    <meta name="keywords" content="mobile app development, web development, iOS app development, Android app development, React Native, Flutter, React, Next.js, Node.js, custom software development, progressive web apps">
+    <meta name="author" content="Wrexa Technologies">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.wrexa.com/mobile-web-development">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mobile & Web App Development Services | Wrexa Technologies">
+    <meta property="og:description" content="Custom mobile and web application development. iOS, Android, React Native, Flutter & modern web technologies.">
+    <meta property="og:url" content="https://www.wrexa.com/mobile-web-development">
+    <meta property="og:site_name" content="Wrexa Technologies">
+    
+    <!-- JSON-LD Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Mobile & Web App Development",
+        "provider": {
+            "@type": "Organization",
+            "name": "Wrexa Technologies",
+            "url": "https://www.wrexa.com"
+        },
+        "description": "Custom mobile and web application development services including iOS, Android, React Native, Flutter, and modern web technologies",
+        "serviceType": "Software Development",
+        "areaServed": "Worldwide"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+                :root {
+            --bg-primary: #0a0b10;
+            --bg-secondary: #0f1015;
+            --bg-header: rgba(10, 11, 16, 0.8);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --accent-blue: #3b82f6;
+            --accent-blue-dark: #2563eb;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow-x: hidden;
+            color: var(--text-primary);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes scaleIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); } 50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(59, 130, 246, 0); } }
+        @keyframes lineMove { 0% { transform: translateX(-100%); } 100% { transform: translateX(400%); } }
+        @keyframes dropdownItemReveal { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes glow { 0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 10px rgba(59, 130, 246, 0.2); } 50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3); } }
+        @keyframes iconGlow { 0%, 100% { filter: drop-shadow(0 0 3px rgba(59, 130, 246, 0.4)); } 50% { filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.8)); } }
+        @keyframes borderGlow { 0%, 100% { border-color: rgba(59, 130, 246, 0.2); } 50% { border-color: rgba(59, 130, 246, 0.5); } }
+        @keyframes textGlow { 0%, 100% { text-shadow: 0 0 5px rgba(59, 130, 246, 0.3); } 50% { text-shadow: 0 0 15px rgba(59, 130, 246, 0.6), 0 0 25px rgba(6, 182, 212, 0.4); } }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes breathe { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
+        @keyframes orbFloat { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(10px, -10px); } 50% { transform: translate(0, -20px); } 75% { transform: translate(-10px, -10px); } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes floatSlow { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-15px) rotate(2deg); } }
+        @keyframes glow { 0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 10px rgba(59, 130, 246, 0.2); } 50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3); } }
+        @keyframes glowPulse { 0%, 100% { filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.4)); } 50% { filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8)); } }
+        @keyframes iconGlow { 0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), inset 0 0 10px rgba(59, 130, 246, 0.1); } 50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), inset 0 0 15px rgba(59, 130, 246, 0.2); } }
+        @keyframes borderGlow { 0%, 100% { border-color: rgba(59, 130, 246, 0.2); } 50% { border-color: rgba(59, 130, 246, 0.5); } }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes breathe { 0%, 100% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.05); opacity: 1; } }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.5rem 2rem;
+            background: var(--bg-header);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            animation: fadeInDown 0.8s ease-out forwards;
+            transition: all 0.4s ease;
+        }
+
+        .header:hover {
+            background: rgba(15, 16, 25, 0.95);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.8), transparent);
+            transition: width 0.4s ease;
+        }
+
+        .header:hover::after { width: 80%; }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo { display: flex; align-items: center; text-decoration: none; }
+        .logo-img { height: 50px; width: auto; filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.4)); transition: all 0.4s ease; }
+        .logo:hover .logo-img { height: 50px; width: auto; filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.4)); transition: all 0.4s ease; }
+
+        .nav { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-link { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s; display: flex; align-items: center; gap: 0.35rem; position: relative; padding: 0.5rem 0; }
+        .nav-link::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background: linear-gradient(135deg, #3b82f6, #06b6d4); transition: width 0.3s; }
+        .nav-link:hover { color: var(--text-primary); transform: translateY(-2px); }
+        .nav-link:hover::after { width: 100%; }
+
+        .nav-dropdown { position: relative; }
+        .dropdown-arrow { width: 14px; height: 14px; margin-left: 4px; transition: transform 0.3s; }
+        .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+        .dropdown-menu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(10px); min-width: 580px; background: rgba(15, 17, 25, 0.98); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 16px; padding: 1rem; opacity: 0; visibility: hidden; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1000; backdrop-filter: blur(20px); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(59, 130, 246, 0.1); }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            min-width: 580px;
+            background: rgba(15, 17, 25, 0.98);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            padding: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .dropdown-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            background: rgba(15, 17, 25, 0.98);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-bottom: none;
+            border-right: none;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        .nav-dropdown:hover .dropdown-menu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(15px); }
+        .dropdown-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .dropdown-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; color: rgba(255, 255, 255, 0.7); text-decoration: none; font-size: 0.85rem; border-radius: 10px; transition: all 0.25s; }
+        .dropdown-item:hover { color: #fff; transform: translateX(5px); background: rgba(59, 130, 246, 0.1); }
+        .dropdown-icon { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 10px; color: #3b82f6; }
+        .dropdown-icon svg { width: 18px; height: 18px; }
+        .dropdown-item:hover .dropdown-icon { background: rgba(59, 130, 246, 0.2); }
+
+        .nav-dropdown:hover .dropdown-item { animation: dropdownItemReveal 0.4s ease forwards; opacity: 0; }
+        .nav-dropdown:hover .dropdown-item:nth-child(1) { animation-delay: 0.05s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(2) { animation-delay: 0.1s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(3) { animation-delay: 0.15s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(4) { animation-delay: 0.2s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(5) { animation-delay: 0.25s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(6) { animation-delay: 0.3s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(7) { animation-delay: 0.35s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(8) { animation-delay: 0.26s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(9) { animation-delay: 0.29s; }
+        .nav-dropdown:hover .dropdown-item:nth-child(10) { animation-delay: 0.32s; }
+
+        .header-right { display: flex; align-items: center; gap: 1rem; }
+        .btn-demo { padding: 0.65rem 1.25rem; border: 1px solid var(--border-color); border-radius: 8px; background: transparent; color: var(--text-primary); font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: all 0.3s; text-decoration: none; }
+        .btn-demo:hover { border-color: rgba(59, 130, 246, 0.6); background: rgba(59, 130, 246, 0.1); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3); }
+
+        .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 5px; }
+        .mobile-menu-btn span { width: 24px; height: 2px; background: var(--text-primary); border-radius: 2px; transition: all 0.3s; }
+
+        .mobile-nav { display: none; position: fixed; top: 70px; left: 0; right: 0; background: rgba(10, 11, 16, 0.98); backdrop-filter: blur(20px); padding: 2rem; transform: translateY(-100%); opacity: 0; transition: all 0.3s; z-index: 999; }
+        .mobile-nav.active { transform: translateY(0); opacity: 1; }
+        .mobile-nav-links { display: flex; flex-direction: column; }
+        .mobile-nav-link { color: var(--text-secondary); text-decoration: none; font-size: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; }
+        .mobile-nav-link:hover { color: var(--text-primary); }
+        .mobile-services-menu { display: none; flex-direction: column; padding-left: 1rem; background: rgba(59, 130, 246, 0.05); border-radius: 8px; margin: 0.5rem 0; }
+        .mobile-services-menu.active { display: flex; }
+        .mobile-services-menu a { color: var(--text-secondary); text-decoration: none; padding: 0.75rem 1rem; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; }
+        .mobile-service-icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; background: rgba(59, 130, 246, 0.1); border-radius: 6px; color: #3b82f6; }
+        .mobile-service-icon svg { width: 14px; height: 14px; }
+
+        /* ========== HERO ========== */
+        .service-hero { position: relative; min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 8rem 2rem 4rem; overflow: hidden; background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); }
+        .hero-bg { position: absolute; inset: 0; pointer-events: none; }
+        .hero-gradient { position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 120%; height: 80%; background: radial-gradient(ellipse at center, rgba(6, 182, 212, 0.15) 0%, transparent 70%); animation: breathe 8s ease-in-out infinite; }
+        .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px); background-size: 60px 60px; }
+        
+        /* Floating orbs */
+        .hero-orb { position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; }
+        .hero-orb-1 { width: 400px; height: 400px; background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%); top: 5%; left: 5%; animation: orbFloat 10s ease-in-out infinite; }
+        .hero-orb-2 { width: 300px; height: 300px; background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%); top: 50%; right: 10%; animation: orbFloat 12s ease-in-out infinite 2s; }
+        .hero-orb-3 { width: 250px; height: 250px; background: radial-gradient(circle, rgba(162, 155, 254, 0.2) 0%, transparent 70%); bottom: 10%; left: 25%; animation: orbFloat 8s ease-in-out infinite 4s; }
+        
+        /* Glowing particles */
+        .hero-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+        .particle { 
+            position: absolute; 
+            width: 6px; 
+            height: 6px; 
+            background: rgba(59, 130, 246, 0.8); 
+            border-radius: 50%; 
+            animation: float 6s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 20px rgba(59, 130, 246, 0.4);
+        }
+        .particle:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; width: 4px; height: 4px; }
+        .particle:nth-child(2) { top: 35%; left: 85%; animation-delay: 1s; width: 8px; height: 8px; }
+        .particle:nth-child(3) { top: 65%; left: 25%; animation-delay: 2s; }
+        .particle:nth-child(4) { top: 20%; left: 70%; animation-delay: 3s; width: 5px; height: 5px; }
+        .particle:nth-child(5) { top: 75%; left: 80%; animation-delay: 4s; width: 4px; height: 4px; }
+        .particle:nth-child(6) { top: 45%; left: 5%; animation-delay: 5s; width: 7px; height: 7px; }
+        
+        .hero-container { max-width: 900px; margin: 0 auto; position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .hero-badge { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            padding: 0.5rem 1rem; 
+            background: rgba(6, 182, 212, 0.1); 
+            border: 1px solid rgba(6, 182, 212, 0.3); 
+            border-radius: 50px; 
+            margin-bottom: 1.5rem; 
+            animation: fadeInUp 0.8s ease-out, glow 3s ease-in-out infinite;
+            backdrop-filter: blur(10px);
+        }
+        .badge-dot { width: 8px; height: 8px; background: var(--accent-blue); border-radius: 50%; animation: pulse 2s infinite; box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+        .hero-badge span { font-size: 0.85rem; color: #3b82f6; font-weight: 500; }
+        .hero-title { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; animation: fadeInUp 0.8s ease-out 0.1s backwards; }
+        .hero-title .highlight { 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            background-size: 300% 100%;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
+        }
+        .hero-description { font-size: 1.15rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem; max-width: 700px; animation: fadeInUp 0.8s ease-out 0.2s backwards; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; animation: fadeInUp 0.8s ease-out 0.3s backwards; }
+        .btn-primary { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 10px; 
+            padding: 1rem 2rem; 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            border-radius: 12px; 
+            color: white; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s;
+        }
+        .btn-primary:hover::before { left: 100%; }
+        .btn-primary:hover { 
+            transform: translateY(-3px) scale(1.02); 
+            box-shadow: 0 20px 50px rgba(6, 182, 212, 0.5), 0 0 40px rgba(59, 130, 246, 0.4); 
+        }
+        .btn-primary svg { width: 20px; height: 20px; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); }
+        .btn-secondary { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 10px; 
+            padding: 1rem 2rem; 
+            background: rgba(59, 130, 246, 0.05); 
+            border: 1px solid rgba(59, 130, 246, 0.3); 
+            border-radius: 12px; 
+            color: var(--text-primary); 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.4s;
+            animation: borderGlow 3s ease-in-out infinite;
+        }
+        .btn-secondary:hover { 
+            background: rgba(59, 130, 246, 0.15); 
+            border-color: rgba(59, 130, 246, 0.6); 
+            transform: translateY(-3px); 
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.25);
+        }
+
+        /* ========== STATS ========== */
+        .stats-bar { 
+            background: rgba(15, 17, 25, 0.6); 
+            border-top: 1px solid var(--border-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .stats-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+        }
+        .stats-bar::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+        }
+        .stats-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        .stat-item { 
+            text-align: center;
+            padding: 1rem;
+            transition: all 0.4s;
+        }
+        .stat-item:hover {
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateY(-5px);
+        }
+        .stat-number { 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            margin-bottom: 0.5rem;
+            animation: textGlow 3s ease-in-out infinite;
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+        }
+        .stat-label { font-size: 0.9rem; color: var(--text-secondary); }
+
+        /* ========== SEO CONTENT ========== */
+        .seo-content-section { padding: 5rem 2rem; background: var(--bg-secondary); position: relative; overflow: hidden; }
+        .seo-content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+        .seo-container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        .seo-header { text-align: center; margin-bottom: 3rem; }
+        .seo-main-title { font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; margin-bottom: 1.5rem; }
+        .seo-main-title .highlight { 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.3));
+        }
+        .seo-intro { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8; max-width: 900px; margin: 0 auto 3rem; }
+        .seo-content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .seo-content-block { 
+            padding: 2rem;
+            background: rgba(59, 130, 246, 0.02);
+            border: 1px solid rgba(59, 130, 246, 0.08);
+            transition: all 0.4s;
+        }
+        .seo-content-block:hover {
+            border-color: rgba(59, 130, 246, 0.2);
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
+        }
+        .seo-content-block h2 { 
+            font-size: 1.5rem; 
+            font-weight: 600; 
+            margin-bottom: 1rem; 
+            color: #3b82f6;
+            animation: textGlow 4s ease-in-out infinite;
+        }
+        .seo-content-block p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; }
+        .seo-features-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+        .seo-feature-item { 
+            background: rgba(59, 130, 246, 0.03); 
+            border: 1px solid rgba(59, 130, 246, 0.1); 
+            padding: 1.5rem; 
+            text-align: center; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .seo-feature-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+        .seo-feature-item:hover::before { transform: scaleX(1); }
+        .seo-feature-item:hover { 
+            transform: translateY(-8px); 
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15), 0 0 20px rgba(59, 130, 246, 0.1);
+        }
+        .seo-feature-item svg { 
+            width: 40px; 
+            height: 50px; 
+            color: #3b82f6; 
+            margin-bottom: 1rem;
+            animation: iconGlow 3s ease-in-out infinite;
+            transition: all 0.4s;
+        }
+        .seo-feature-item:hover svg {
+            transform: scale(1.2);
+            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.6));
+        }
+        .seo-feature-item h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .seo-feature-item p { font-size: 0.85rem; color: var(--text-secondary); }
+
+        /* ========== PROJECTS ========== */
+        .projects-section { padding: 5rem 2rem; }
+        .projects-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .project-card { 
+            background: rgba(59, 130, 246, 0.03); 
+            border: 1px solid rgba(59, 130, 246, 0.1); 
+            border-radius: 20px; 
+            overflow: hidden; 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+        .project-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), transparent, rgba(6, 182, 212, 0.3));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        .project-card:hover::before { opacity: 1; }
+        .project-card:hover { 
+            transform: translateY(-10px) scale(1.02); 
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 25px 60px rgba(59, 130, 246, 0.2), 0 0 40px rgba(59, 130, 246, 0.1);
+        }
+        .project-image { position: relative; height: 220px; overflow: hidden; }
+        .project-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        .project-card:hover .project-image img { transform: scale(1.15); }
+        .project-image::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60%; background: linear-gradient(to top, rgba(10, 11, 16, 0.95), transparent); }
+        .project-category { 
+            position: absolute; 
+            top: 1rem; 
+            left: 1rem; 
+            padding: 0.4rem 0.8rem; 
+            background: rgba(6, 182, 212, 0.9); 
+            border-radius: 20px; 
+            font-size: 0.7rem; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+            animation: glow 3s ease-in-out infinite;
+        }
+        .project-content { padding: 1.5rem; }
+        .project-title { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; transition: all 0.3s; }
+        .project-card:hover .project-title { color: #22d3ee; text-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+        .project-description { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+        .project-tag { 
+            padding: 0.3rem 0.6rem; 
+            background: rgba(59, 130, 246, 0.1); 
+            border: 1px solid rgba(59, 130, 246, 0.2); 
+            border-radius: 6px; 
+            font-size: 0.75rem; 
+            color: #3b82f6;
+            transition: all 0.3s;
+        }
+        .project-tag:hover {
+            background: rgba(59, 130, 246, 0.2);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        .project-stats { display: flex; gap: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(59, 130, 246, 0.1); }
+        .project-stat { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--text-secondary); }
+        .project-stat svg { width: 16px; height: 16px; color: #3b82f6; animation: iconGlow 2s ease-in-out infinite; }
+        .project-stat strong { color: var(--text-primary); }
+        .project-card.featured { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; }
+        .project-card.featured .project-image { height: 100%; min-height: 350px; }
+        .project-card.featured .project-content { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+        .project-card.featured .project-title { font-size: 1.5rem; }
+
+        /* ========== SECTIONS ========== */
+        .section { padding: 5rem 2rem; }
+        .section-header { text-align: center; margin-bottom: 4rem; }
+        .section-badge { 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            padding: 0.5rem 1rem; 
+            background: rgba(6, 182, 212, 0.1); 
+            border: 1px solid rgba(6, 182, 212, 0.2); 
+            border-radius: 50px; 
+            margin-bottom: 1rem;
+            animation: glow 4s ease-in-out infinite;
+        }
+        .section-badge .badge-dot { 
+            width: 6px; 
+            height: 6px; 
+            background: var(--accent-blue); 
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+            animation: pulse 2s infinite;
+        }
+        .section-badge span { font-size: 0.8rem; color: #3b82f6; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
+        .section-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1rem; }
+        .section-title .highlight { 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.3));
+        }
+        .section-description { font-size: 1.1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        /* ========== FEATURES ========== */
+        .features-section { background: var(--bg-secondary); }
+        .features-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .feature-card { 
+            background: rgba(59, 130, 246, 0.03); 
+            border: 1px solid rgba(59, 130, 246, 0.1); 
+            border-radius: 20px; 
+            padding: 2.5rem; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            position: relative; 
+            overflow: hidden;
+        }
+        .feature-card::before { 
+            content: ''; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            height: 3px; 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            transform: scaleX(0); 
+            transition: transform 0.4s;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            pointer-events: none;
+        }
+        .feature-card:hover { 
+            transform: translateY(-10px); 
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2), 0 0 30px rgba(59, 130, 246, 0.1);
+        }
+        .feature-card:hover::before { transform: scaleX(1); }
+        .feature-card:hover::after { opacity: 1; }
+        .feature-icon { 
+            width: 70px; 
+            height: 50px; 
+            background: rgba(6, 182, 212, 0.1); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-bottom: 1.5rem; 
+            transition: all 0.4s;
+            animation: iconGlow 3s ease-in-out infinite;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .feature-card:hover .feature-icon { 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            animation: none;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            transform: scale(1.1) rotate(-5deg);
+        }
+        .feature-icon svg { width: 32px; height: 32px; color: #3b82f6; transition: all 0.4s; filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3)); }
+        .feature-card:hover .feature-icon svg { color: white; filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); }
+        .feature-card h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+        .feature-card p { color: var(--text-secondary); line-height: 1.7; }
+
+        /* ========== PROCESS ========== */
+        .process-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; }
+        .process-grid::before { 
+            content: ''; 
+            position: absolute; 
+            top: 40px; 
+            left: 10%; 
+            right: 10%; 
+            height: 2px; 
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.4), transparent);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+        }
+        .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 1; }
+        .process-number { 
+            width: 80px; 
+            height: 100px; 
+            background: rgba(59, 130, 246, 0.1); 
+            border: 2px solid rgba(59, 130, 246, 0.3); 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 1.75rem; 
+            font-weight: 700; 
+            color: #3b82f6; 
+            margin-bottom: 1.5rem; 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: glow 4s ease-in-out infinite;
+            position: relative;
+        }
+        .process-number::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), transparent, rgba(6, 182, 212, 0.3));
+            opacity: 0;
+            transition: opacity 0.4s;
+            z-index: -1;
+        }
+        .process-step:hover .process-number::before { opacity: 1; }
+        .process-step:hover .process-number { 
+            background: linear-gradient(135deg, #3b82f6, #06b6d4); 
+            color: #fff; 
+            border-color: transparent; 
+            transform: scale(1.15);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 60px rgba(6, 182, 212, 0.3);
+            animation: none;
+        }
+        .process-content { 
+            padding: 1.5rem; 
+            background: rgba(59, 130, 246, 0.03); 
+            border: 1px solid rgba(59, 130, 246, 0.1); 
+            transition: all 0.4s; 
+            height: 100%;
+        }
+        .process-step:hover .process-content { 
+            border-color: rgba(59, 130, 246, 0.3); 
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+        }
+        .process-content h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .process-content p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.7; }
+
+        /* ========== TECH ========== */
+        .tech-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+        .tech-item { 
+            background: rgba(59, 130, 246, 0.03); 
+            border: 1px solid rgba(59, 130, 246, 0.15); 
+            padding: 1.5rem; 
+            text-align: center; 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            animation: borderGlow 3s ease-in-out infinite;
+        }
+        .tech-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        .tech-item:hover::before { left: 100%; }
+        .tech-item:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.25), 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+        .tech-icon { 
+            width: 60px; 
+            height: 50px; 
+            margin: 0 auto 1rem; 
+            background: rgba(59, 130, 246, 0.08); 
+            border-radius: 14px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            animation: iconGlow 3s ease-in-out infinite, float 4s ease-in-out infinite;
+            transition: all 0.4s;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        .tech-item:hover .tech-icon {
+            animation: none;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(6, 182, 212, 0.2));
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+        .tech-icon img { 
+            width: 36px; 
+            height: 36px; 
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3));
+            transition: all 0.4s;
+        }
+        .tech-item:hover .tech-icon img {
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.6));
+            transform: scale(1.1);
+        }
+        .tech-icon svg { width: 32px; height: 32px; color: #3b82f6; transition: all 0.4s; filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3)); }
+        .tech-item:hover .tech-icon svg { 
+            color: #22d3ee; 
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.6));
+            transform: scale(1.1);
+        }
+        .tech-name { font-size: 0.9rem; font-weight: 600; background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Stagger animation delays for tech items */
+        .tech-item:nth-child(1) { animation-delay: 0s; }
+        .tech-item:nth-child(2) { animation-delay: 0.1s; }
+        .tech-item:nth-child(3) { animation-delay: 0.2s; }
+        .tech-item:nth-child(4) { animation-delay: 0.3s; }
+        .tech-item:nth-child(5) { animation-delay: 0.4s; }
+        .tech-item:nth-child(6) { animation-delay: 0.5s; }
+        .tech-item:nth-child(7) { animation-delay: 0.6s; }
+        .tech-item:nth-child(8) { animation-delay: 0.7s; }
+        .tech-item:nth-child(9) { animation-delay: 0.8s; }
+        .tech-item:nth-child(10) { animation-delay: 0.9s; }
+        .tech-item:nth-child(11) { animation-delay: 1s; }
+        .tech-item:nth-child(12) { animation-delay: 1.1s; }
+        .tech-item:nth-child(13) { animation-delay: 1.2s; }
+        .tech-item:nth-child(14) { animation-delay: 1.3s; }
+        .tech-item:nth-child(15) { animation-delay: 1.4s; }
+        
+        /* Stagger float animation delays for icons */
+        .tech-item:nth-child(1) .tech-icon { animation-delay: 0s; }
+        .tech-item:nth-child(2) .tech-icon { animation-delay: 0.3s; }
+        .tech-item:nth-child(3) .tech-icon { animation-delay: 0.6s; }
+        .tech-item:nth-child(4) .tech-icon { animation-delay: 0.9s; }
+        .tech-item:nth-child(5) .tech-icon { animation-delay: 1.2s; }
+        .tech-item:nth-child(6) .tech-icon { animation-delay: 0.15s; }
+        .tech-item:nth-child(7) .tech-icon { animation-delay: 0.45s; }
+        .tech-item:nth-child(8) .tech-icon { animation-delay: 0.75s; }
+        .tech-item:nth-child(9) .tech-icon { animation-delay: 1.05s; }
+        .tech-item:nth-child(10) .tech-icon { animation-delay: 1.35s; }
+        .tech-item:nth-child(11) .tech-icon { animation-delay: 0.2s; }
+        .tech-item:nth-child(12) .tech-icon { animation-delay: 0.5s; }
+        .tech-item:nth-child(13) .tech-icon { animation-delay: 0.8s; }
+        .tech-item:nth-child(14) .tech-icon { animation-delay: 1.1s; }
+        .tech-item:nth-child(15) .tech-icon { animation-delay: 1.4s; }
+
+        /* ========== CTA ========== */
+        .cta-section { 
+            padding: 5rem 2rem; 
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.1)); 
+            border-top: 1px solid rgba(59, 130, 246, 0.2); 
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            animation: breathe 6s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .cta-content { max-width: 700px; margin: 0 auto; position: relative; z-index: 1; }
+        .cta-content h2 { 
+            font-size: clamp(2rem, 4vw, 2.5rem); 
+            font-weight: 700; 
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-content p { color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem; }
+
+        /* ========== FOOTER ========== */
+        .footer-section { position: relative; background: linear-gradient(180deg, rgba(15, 17, 25, 0.95) 0%, rgba(10, 11, 16, 1) 100%); padding: 4rem 2rem 2rem; border-top: 1px solid rgba(59, 130, 246, 0.1); overflow: hidden; }
+        .footer-bg { position: absolute; inset: 0; pointer-events: none; }
+        .footer-gradient { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 300px; background: radial-gradient(ellipse at center top, rgba(59, 130, 246, 0.08) 0%, transparent 70%); }
+        .footer-container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+        .footer-logo { margin-bottom: 1.5rem; }
+        .footer-logo-img { height:  100px; width: auto; filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3)); }
+        .company-addresses { margin-bottom: 1.5rem; }
+        .company-addresses p { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem; }
+        .footer-email { display: inline-flex; align-items: center; gap: 10px; color: #3b82f6; text-decoration: none; font-size: 0.9rem; }
+        .footer-email:hover { color: #22d3ee; }
+        .footer-email svg { width: 18px; height: 18px; }
+        .footer-links-title { font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; letter-spacing: 1px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 0.75rem; }
+        .footer-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
+        .footer-links a:hover { color: #3b82f6; }
+        .footer-divider { position: relative; height: 1px; margin-bottom: 2rem; }
+        .divider-line { position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+        .footer-legal { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .legal-link { color: var(--text-secondary); text-decoration: none; font-size: 0.8rem; }
+        .legal-link:hover { color: #3b82f6; }
+        .footer-copyright { color: var(--text-secondary); font-size: 0.8rem; }
+        .footer-badges { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; padding-top: 1.5rem; border-top: 1px solid rgba(59, 130, 246, 0.1); }
+        .security-badge { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); font-size: 0.8rem; }
+        .security-badge svg { width: 20px; height: 20px; color: #3b82f6; }
+        .footer-bottom-line { position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: rgba(59, 130, 246, 0.1); overflow: hidden; }
+        .line-progress { width: 30%; height: 100%; background: linear-gradient(135deg, #3b82f6, #06b6d4); animation: lineMove 3s ease-in-out infinite; }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .features-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+            .tech-grid { grid-template-columns: repeat(3, 1fr); }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid::before { display: none; }
+            .seo-content-grid { grid-template-columns: 1fr; }
+            .seo-features-list { grid-template-columns: repeat(2, 1fr); }
+            .project-card.featured { grid-column: span 2; }
+        }
+        @media (max-width: 900px) {
+            .nav { display: none; }
+            .mobile-nav { display: block; }
+            .mobile-menu-btn { display: flex; }
+            .stats-container { grid-template-columns: repeat(2, 1fr); }
+            .footer-main { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 600px) {
+            .service-hero { padding: 7rem 1rem 3rem; min-height: auto; }
+            .hero-buttons { flex-direction: column; }
+            .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+            .features-grid, .projects-grid { grid-template-columns: 1fr; }
+            .tech-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr; text-align: center; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .seo-features-list { grid-template-columns: 1fr; }
+            .project-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+            .project-card.featured .project-image { min-height: 220px; }
+        }
+    
+        
+
+
+        .footer-logo-img {
+            height: 100px;
+            width: auto;
+            filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.4));
+            transition: all 0.4s ease;
+        }
+
+        .footer-logo-img:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="data:image/jpeg;base64,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" alt="Wrexa" class="logo-img">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link has-dropdown">
+                        Services
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-inner">
+                            <a href="metaverse-development.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/></svg></span><span>Metaverse Development</span></a>
+                            <a href="game-development.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="2"/><path d="M15 10v4M13 12h4" stroke="currentColor" stroke-width="2"/></svg></span><span>Game Development</span></a>
+                            <a href="mobile-web-development.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>Web & Mobile Apps</span></a>
+                            <a href="ai-solutions.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span><span>AI Solutions</span></a>
+                            <a href="ar-vr.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="12" r="2" stroke="currentColor" stroke-width="2"/></svg></span><span>AR/VR Experiences</span></a>
+                            <a href="blockchain.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></span><span>Blockchain & Web3</span></a>
+                            <a href="devops-sre.html" class="dropdown-item"><span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg></span><span>DevOps & SRE</span></a>
+                            <a href="it-support.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>IT Support</span>
+                            </a>
+                            <a href="cgi-3d-visualization.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>CGI &amp; 3D Visualization</span>
+                            </a>
+                            <a href="immersive-training.html" class="dropdown-item">
+                                <span class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2"/></svg></span>
+                                <span>Immersive Training</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="about-us.html" class="nav-link">About Us</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="blogs.html" class="nav-link">Blogs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-right">
+                <a href="https://cal.com/wrexa/30min" target="_blank" class="btn-demo">Book a Demo</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="#" class="mobile-nav-link has-submenu" id="mobileServicesToggle">Services<svg viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2"/></svg></a>
+            <div class="mobile-services-menu" id="mobileServicesMenu">
+                <a href="metaverse-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="2"/></svg></span>Metaverse Development</a>
+                <a href="game-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>Game Development</a>
+                <a href="mobile-web-development.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>Web & Mobile Apps</a>
+                <a href="ai-solutions.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></span>AI Solutions</a>
+                <a href="ar-vr.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="10" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>AR/VR Experiences</a>
+                <a href="blockchain.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></span>Blockchain & Web3</a>
+                <a href="devops-sre.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/></svg></span>DevOps & SRE</a>
+                <a href="it-support.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/></svg></span>IT Support</a>
+                <a href="cgi-3d-visualization.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/><path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="2"/></svg></span>CGI &amp; 3D Visualization</a>
+                <a href="immersive-training.html"><span class="mobile-service-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2"/></svg></span>Immersive Training</a>
+            </div>
+            <a href="about-us.html" class="mobile-nav-link">About Us</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="blogs.html" class="mobile-nav-link">Blogs</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="service-hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge"><span class="badge-dot"></span><span>Web & Mobile Development</span></div>
+            <h1 class="hero-title">Build Powerful <span class="highlight">Digital Experiences</span></h1>
+            <p class="hero-description">From native mobile apps to progressive web applications, we craft high-performance digital products that users love. iOS, Android, React, Next.js – we speak every platform's language.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-primary">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2"/></svg>
+                    Start Your Project
+                </a>
+                <a href="#services" class="btn-secondary">View Services<svg viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Apps Delivered</div></div>
+            <div class="stat-item"><div class="stat-number">50M+</div><div class="stat-label">App Downloads</div></div>
+            <div class="stat-item"><div class="stat-number">4.8★</div><div class="stat-label">Avg Store Rating</div></div>
+            <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Uptime SLA</div></div>
+        </div>
+    </div>
+
+    <!-- SEO Content -->
+    <section class="seo-content-section">
+        <div class="seo-container">
+            <div class="seo-header">
+                <h1 class="seo-main-title">Custom <span class="highlight">Mobile & Web Application</span> Development Services</h1>
+                <p class="seo-intro">Wrexa Technologies delivers end-to-end mobile and web application development services that transform business ideas into market-leading digital products. Our full-stack developers build native iOS and Android apps, cross-platform solutions with React Native and Flutter, and modern web applications using React, Next.js, and Node.js.</p>
+            </div>
+
+            <div class="seo-content-grid">
+                <div class="seo-content-block">
+                    <h2>Native Mobile App Development</h2>
+                    <p>Our iOS and Android development teams build native applications that leverage platform-specific capabilities for maximum performance. Using Swift, SwiftUI, Kotlin, and Jetpack Compose, we create apps that feel natural to users and perform flawlessly.</p>
+                    <p>From consumer apps to enterprise mobility solutions, our native apps have achieved 50M+ combined downloads with average store ratings above 4.8 stars.</p>
+                </div>
+                <div class="seo-content-block">
+                    <h2>Cross-Platform Development</h2>
+                    <p>Reduce time-to-market with React Native and Flutter development. We build cross-platform applications that share up to 90% code between iOS and Android while delivering native-like performance and user experience.</p>
+                    <p>Our cross-platform expertise enables startups and enterprises to launch on both platforms simultaneously, cutting development costs by 40% without compromising quality.</p>
+                </div>
+                <div class="seo-content-block">
+                    <h2>Modern Web Applications</h2>
+                    <p>Build fast, scalable web applications with React, Next.js, Vue.js, and Angular. We create progressive web apps (PWAs), single-page applications (SPAs), and server-side rendered websites optimized for SEO and performance.</p>
+                    <p>Our web applications achieve sub-second load times, 90+ Lighthouse scores, and seamless experiences across all devices and browsers.</p>
+                </div>
+                <div class="seo-content-block">
+                    <h2>Backend & API Development</h2>
+                    <p>Power your applications with robust backend systems built on Node.js, Python, Go, and cloud-native architectures. We design RESTful APIs, GraphQL endpoints, microservices, and real-time systems using WebSockets.</p>
+                    <p>Our backend solutions scale to millions of users with 99.9% uptime guarantees, integrating with databases, third-party services, and enterprise systems.</p>
+                </div>
+            </div>
+
+            <div class="seo-features-list">
+                <div class="seo-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 18h.01" stroke="currentColor" stroke-width="2"/></svg>
+                    <h3>Mobile Apps</h3>
+                    <p>iOS, Android & cross-platform solutions</p>
+                </div>
+                <div class="seo-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/></svg>
+                    <h3>Web Apps</h3>
+                    <p>React, Next.js & progressive web apps</p>
+                </div>
+                <div class="seo-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg>
+                    <h3>Backend APIs</h3>
+                    <p>Node.js, GraphQL & microservices</p>
+                </div>
+                <div class="seo-feature-item">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"/></svg>
+                    <h3>Performance</h3>
+                    <p>Optimized for speed & scalability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects-section">
+        <div class="section-header">
+            <div class="section-badge"><span class="badge-dot"></span><span>Portfolio</span></div>
+            <h2 class="section-title">Our <span class="highlight">Projects</span></h2>
+            <p class="section-description">Real mobile and web applications built by Wrexa Technologies.</p>
+        </div>
+        <div class="projects-grid">
+            <!-- Featured: Crypterium -->
+            <div class="project-card featured">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80" alt="Crypterium Crypto Wallet App">
+                    <span class="project-category">Blockchain FinTech</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Crypterium - Crypto Wallet & Payments</h3>
+                    <p class="project-description">A blockchain-powered hybrid app enabling users to manage crypto assets, pay bills, and seamlessly convert cryptocurrencies into traditional currencies. Features multi-currency crypto wallet for storing and managing digital assets, crypto debit cards for easy payments, and blockchain technology ensuring transparency, security, and decentralization in fintech.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Blockchain</span>
+                        <span class="project-tag">Web3</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 18h.01" stroke="currentColor" stroke-width="2"/></svg><span><strong>iOS</strong> Android Web</span></div>
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg><span><strong>Secure</strong> Blockchain</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sleep Tracker -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80" alt="Sleep Tracker App">
+                    <span class="project-category">Health & Wellness</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sleep Tracker & Snore Recorder</h3>
+                    <p class="project-description">Hybrid app providing comprehensive insights into sleep patterns and snoring habits. Compatible with Apple Watch, combining advanced sleep tracking technology with snore detection to help users improve rest quality and identify potential sleep issues.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Swift</span>
+                        <span class="project-tag">WatchOS</span>
+                        <span class="project-tag">HealthKit</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/></svg><span><strong>Apple Watch</strong> Compatible</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF Scanner -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=600&q=80" alt="PDF Scanner App">
+                    <span class="project-category">Productivity</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">PDF Scanner App & Doc iScanner</h3>
+                    <p class="project-description">Hybrid app transforming mobile devices into powerful document scanning and management tools. Equipped with OCR technology, allowing users to quickly scan, digitize, and organize documents – indispensable for professionals, students, and paperwork management.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">OCR</span>
+                        <span class="project-tag">ML Kit</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="currentColor" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2"/></svg><span><strong>OCR</strong> Technology</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BWOW -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="BWOW Fitness App">
+                    <span class="project-category">Health & Fitness</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">BWOW - Health & Fitness App</h3>
+                    <p class="project-description">Cutting-edge hybrid health and fitness app designed to empower users in their fitness journey. Offers a holistic approach to wellness by integrating fitness tracking, nutrition management, and personalized wellness insights all in one platform.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">HealthKit</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"/></svg><span><strong>Holistic</strong> Wellness</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Gaming -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80" alt="Skill Gaming App">
+                    <span class="project-category">Blockchain Gaming</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Skill Gaming - Play & Earn Platform</h3>
+                    <p class="project-description">Blockchain-powered gaming app providing access to 100+ games where users can play and earn real money online. Integrates blockchain technology ensuring transparency, fairness, and security in all game-related transactions.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Blockchain</span>
+                        <span class="project-tag">Smart Contracts</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="12" r="2" stroke="currentColor" stroke-width="2"/><path d="M15 10v4M13 12h4" stroke="currentColor" stroke-width="2"/></svg><span><strong>100+</strong> Games</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Project Cards -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="FinTech Banking App">
+                    <span class="project-category">FinTech</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Mobile Banking Platform</h3>
+                    <p class="project-description">Full-featured banking app with account management, P2P transfers, bill payments, and investment tracking. Biometric authentication and PCI-DSS compliant architecture.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg><span><strong>PCI-DSS</strong> Compliant</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?w=600&q=80" alt="E-commerce App">
+                    <span class="project-category">E-Commerce</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Multi-Vendor Marketplace</h3>
+                    <p class="project-description">iOS and Android marketplace with vendor management, AR product preview, AI-powered recommendations, and integrated payment processing.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Stripe</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="currentColor" stroke-width="2"/></svg><span><strong>10K+</strong> Products</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80" alt="Healthcare App">
+                    <span class="project-category">Healthcare</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Telemedicine Platform</h3>
+                    <p class="project-description">HIPAA-compliant telehealth platform with video consultations, prescription management, health records, and wearable device integration.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Swift</span>
+                        <span class="project-tag">Kotlin</span>
+                        <span class="project-tag">WebRTC</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"/></svg><span><strong>HIPAA</strong> Compliant</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section" id="services">
+        <div class="section-header">
+            <div class="section-badge"><span class="badge-dot"></span><span>Services</span></div>
+            <h2 class="section-title">Development <span class="highlight">Services</span></h2>
+            <p class="section-description">Full-stack development for every platform and use case.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M12 18h.01" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>iOS Development</h3>
+                <p>Native iPhone and iPad apps using Swift, SwiftUI, and UIKit with App Store optimization.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 22h6" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Android Development</h3>
+                <p>Native Android apps with Kotlin, Jetpack Compose, and Material Design for all devices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Cross-Platform Apps</h3>
+                <p>React Native and Flutter apps with shared codebase for iOS and Android.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Web Applications</h3>
+                <p>React, Next.js, Vue.js, and Angular apps optimized for performance and SEO.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Progressive Web Apps</h3>
+                <p>Installable web apps with offline support, push notifications, and native-like UX.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Backend & APIs</h3>
+                <p>Scalable Node.js, Python, and Go backends with REST and GraphQL APIs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-badge"><span class="badge-dot"></span><span>Process</span></div>
+            <h2 class="section-title">How We <span class="highlight">Build</span></h2>
+            <p class="section-description">Agile methodology delivering quality at speed.</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step"><div class="process-number">1</div><div class="process-content"><h3>Discovery & Design</h3><p>User research, wireframes, UI/UX design, and technical architecture planning.</p></div></div>
+            <div class="process-step"><div class="process-number">2</div><div class="process-content"><h3>Agile Development</h3><p>Sprint-based development with continuous integration and regular demos.</p></div></div>
+            <div class="process-step"><div class="process-number">3</div><div class="process-content"><h3>Testing & QA</h3><p>Automated testing, manual QA, performance testing, and security audits.</p></div></div>
+            <div class="process-step"><div class="process-number">4</div><div class="process-content"><h3>Launch & Support</h3><p>App store deployment, monitoring, analytics, and ongoing maintenance.</p></div></div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section features-section">
+        <div class="section-header">
+            <div class="section-badge"><span class="badge-dot"></span><span>Tech Stack</span></div>
+            <h2 class="section-title">Technologies We <span class="highlight">Use</span></h2>
+            <p class="section-description">Modern frameworks and platforms powering your applications.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                </div>
+                <div class="tech-name">React</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: invert(1) drop-shadow(0 0 5px rgba(59, 130, 246, 0.3));">
+                </div>
+                <div class="tech-name">Next.js</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+                </div>
+                <div class="tech-name">React Native</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                </div>
+                <div class="tech-name">Flutter</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift">
+                </div>
+                <div class="tech-name">Swift</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                </div>
+                <div class="tech-name">Kotlin</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                </div>
+                <div class="tech-name">Node.js</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                </div>
+                <div class="tech-name">TypeScript</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                </div>
+                <div class="tech-name">Vue.js</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL">
+                </div>
+                <div class="tech-name">GraphQL</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                </div>
+                <div class="tech-name">Python</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                </div>
+                <div class="tech-name">MongoDB</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                </div>
+                <div class="tech-name">PostgreSQL</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" style="filter: invert(1) drop-shadow(0 0 5px rgba(59, 130, 246, 0.3));">
+                </div>
+                <div class="tech-name">AWS</div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                </div>
+                <div class="tech-name">Firebase</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Build Your App?</h2>
+            <p>Let's discuss your project and create a digital product that users will love.</p>
+            <a href="contact.html" class="btn-primary"><svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2"/></svg>Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-bg"><div class="footer-gradient"></div></div>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-company">
+                    <div class="footer-logo"><img src="data:image/jpeg;base64,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" alt="Wrexa" class="footer-logo-img"></div>
+                    <div class="company-addresses">
+                        <p>5830 E 2nd St, Ste 8, Casper, WY 82609, USA</p>
+                        <p>3/350 Rajiv Gandhi Salai OMR, Chennai, India</p>
+                        <p>(+91) 99529 47755</p>
+                    </div>
+                    <a href="mailto:contact@wrexa.com" class="footer-email"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2"/></svg><span>contact@wrexa.com</span></a>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">QUICK LINKS</h4>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">SERVICES</h4>
+                    <ul class="footer-links"><li><a href="game-development.html">Game Development</a></li><li><a href="ar-vr.html">AR/VR Solutions</a></li><li><a href="metaverse-development.html">Metaverse</a></li><li><a href="ai-solutions.html">AI Solutions</a></li></ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">CONNECT</h4>
+                    <ul class="footer-links"><li><a href="pricing.html">Pricing</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="https://www.linkedin.com/company/wrexa" target="_blank">LinkedIn</a></li><li><a href="https://www.instagram.com/wrexatech" target="_blank">Instagram</a></li></ul>
+                </div>
+            </div>
+            <div class="footer-divider"><div class="divider-line"></div></div>
+            <div class="footer-bottom">
+                <div class="footer-legal"><a href="privacy-policy.html" class="legal-link">Privacy Policy</a><a href="terms-of-service.html" class="legal-link">Terms of Service</a><a href="cookie-policy.html" class="legal-link">Cookie Settings</a></div>
+                <div class="footer-copyright"><p>© 2026 Wrexa Technologies. All rights reserved.</p></div>
+            </div>
+            <div class="footer-badges">
+                <div class="security-badge"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2"/></svg><span>SSL Secured</span></div>
+                <div class="security-badge"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="2"/></svg><span>GDPR Compliant</span></div>
+                <div class="security-badge"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/></svg><span>24/7 Support</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom-line"><div class="line-progress"></div></div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileServicesToggle = document.getElementById('mobileServicesToggle');
+        const mobileServicesMenu = document.getElementById('mobileServicesMenu');
+        
+        if (mobileMenuBtn && mobileNav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+            });
+        }
+        
+        if (mobileServicesToggle && mobileServicesMenu) {
+            mobileServicesToggle.addEventListener('click', e => {
+                e.preventDefault();
+                mobileServicesToggle.classList.toggle('active');
+                mobileServicesMenu.classList.toggle('active');
+            });
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .process-step, .tech-item, .project-card, .seo-feature-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/placeholder/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
